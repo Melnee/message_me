@@ -1,6 +1,5 @@
- <a class="active item">
-    Chatroom
-</a>
+
+<%= link_to "Chatroom", root_path, class: "active item"%>
 <a class="item">
     Messages
 </a>
@@ -9,7 +8,7 @@
         <div class="ui primary button">Log out</div>
     </div>
     <div class="item">
-        <div class="ui primary button">Log in</div>
+        <%= link_to "Login", login_path, class: "ui primary button"%>
     </div>
     <div class="item">
         <div class="ui primary button">Sign Up</div>
